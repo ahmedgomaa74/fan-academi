@@ -166,6 +166,57 @@ body {
 .medi ul li {
     margin: 0px 0px 0px 10px;
     font-size: 22px;
+    position: relative;
+    cursor: pointer;    
+}
+
+.drop-header-1 {
+    position: absolute;
+    width: 170px;
+    background: #fff;
+    box-shadow: 0px 0px 4px #888;
+    padding: 15px;
+    border-radius: 5px;
+    right: -149px;
+    bottom: -139px;
+    display: none;
+}
+
+
+
+.drop-header-1::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 19px solid transparent;
+    border-bottom: 20px solid #fff;
+    top: -8px;
+    left: 6px;
+}
+
+.drop-header-img {
+    display: inline-block;
+    width: 34%;
+    vertical-align: top;
+}
+
+.drop-header-2::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 19px solid transparent;
+    border-bottom: 20px solid #fff;
+    top: -8px;
+    left: 6px;
+}
+.drop-header-img img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
 }
 
 .medi ul li img {
@@ -184,6 +235,32 @@ body {
 .title-center img {
     max-width: 259px;
     max-height: 113px;
+    cursor: pointer;
+
+}
+
+.drop-header-text {
+    display: inline-block;
+    width: 60%;
+    cursor: pointer;
+
+}
+.drop-header-text1{
+  display: block;
+}
+
+.drop-header-text1 ul li  {
+    font-size: 13px;
+    color: #000;
+    border-bottom:#ccc 2px solid;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.drop-header-text ul li {
+    font-size: 13px;
+    color: #000;
 }
 
 .index-text {
@@ -1990,42 +2067,47 @@ ul#pills-tab {
     top: 0px;
     color: #868686;
 }
-.message-view{
-background:#f5f6fa;
-padding: 20px 30px;
+
+.message-view {
+    background: #f5f6fa;
+    padding: 20px 30px;
 }
-.chat{
-background:#fff;
-padding: 20px;
+
+.chat {
+    background: #fff;
+    padding: 20px;
 }
+
 .sub-chat img,
-.sub-chat2 img{
-    width: 30px ;
+.sub-chat2 img {
+    width: 30px;
     height: 30px;
     border-radius: 50%;
 }
+
 .sub-chat p,
-.sub-chat2 p{
-    background:#e2f2e3;
+.sub-chat2 p {
+    background: #e2f2e3;
     min-width: 100px;
     display: inline-block;
-    padding: 10px; 
-    border-radius:5px;
+    padding: 10px;
+    border-radius: 5px;
     position: relative;
 }
+
 .sub-chat2 {
     text-align: left;
     direction: ltr;
     margin: 20px 0px;
 }
-.input-chat{
+
+.input-chat {
     margin-top: 20px;
     position: relative;
-
 }
-.input-chat .form-control{
+
+.input-chat .form-control {
     overflow: hidden;
-    
 }
 
 .input-chat .cus-btn {

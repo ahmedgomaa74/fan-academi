@@ -397,219 +397,277 @@
     .courses-div .silder-blog {
         width: 63%;
     }
-   
     .sub-Show {
         font-size: 13px;
     }
     .Product-details .silder-blog {
         width: 66%;
     }
+    .sub-courses-view ul li {
+        font-size: 14px;
+    }
+    .sub-chat p,
+    .sub-chat2 p {
+        width: 132px;
+        font-size: 13px;
+    }
+    .input-chat {
+        margin-top: 10px;
+        position: relative;
+    }
 }
-
 @media only screen and (max-width:460px) {
     .img-blog {
         width: 42%;
         margin-top: 22px;
     }
+    
     .img-blog:hover {
         transform: translateY(0px);
     }
+    
     .text-blog img {
         max-height: 49px;
         max-width: 56px;
     }
+    
     .title-center {
         text-align: center;
         margin: 30px 0px 10px;
     }
+    
     .title-center {
         margin: 30px 0px 10px;
         padding: 0px 0px 10px;
     }
+    
     .index-img2 img {
         height: 50px;
         max-width: 165px;
     }
+    
     .service-box {
         padding: 5px 5px;
     }
+    
     .img-service-box {
         width: 100px;
         height: 60px;
         margin: auto;
     }
+    
     .img-service-box img {
         max-width: 83px;
         max-height: 51px;
     }
+    
     .sup-end-footer ul li {
         font-size: 15px;
         margin: 20px;
         list-style-type: none;
         position: relative;
     }
+    
     .sup2-end-footer ul li {
         font-size: 14px;
     }
+    
     .img-footer img {
         margin: 10px 0px;
         height: 54px;
         width: 172px;
     }
+    
     .text-service-box p {
         overflow: hidden;
         font-size: 10px;
         margin: 0px;
     }
+    
     .service {
         min-height: 664px;
     }
+    
     .logo-jaadara p {
         font-size: 10px;
     }
+    
     .logo-jaadara h4 {
         font-size: 10px;
     }
+    
     .silder-blog {
         width: 56%;
         margin: 10px auto;
     }
     /*--------- test------ */
+    
     .sub-img-test {
         width: 49%;
     }
+    
     .test2::before {
         width: 20px;
         height: 20px;
     }
+    
     .sub2-test input:checked~label::after {
         width: 10px;
         height: 10px;
     }
+    
     .sub-img-test1::before {
         height: 20px;
         width: 20px;
     }
+    
     .sub-img-test input:checked~label::after {
         content: "";
         height: 10px;
         width: 10px;
     }
     /* --------contact------ */
+    
     .form-contact .form-contact1 .form-control {
         height: 190px;
     }
+    
     .sub-contact ul li {
         width: 40px;
         height: 40px;
     }
+    
     .sub-contact ul li i {
         font-size: 16px;
     }
+    
     .text-about h2 {
         font-size: 19px;
         margin: 10px 0px;
         color: #00aa9d;
         font-weight: bold;
     }
+    
     .sub1-from-buy input {
         width: 97%;
         margin-right: 11px;
         text-align: center;
     }
+    
     .courses-div .sup-silder-blog img {
         width: 100%;
         max-height: 145px;
     }
+    
     .courses-div .silder-blog {
         width: 80%;
     }
+    
     .sub2-pro-top {
         width: 66%;
     }
+    
     .form-label-pro {
         width: 100%;
         display: block;
     }
+    
     .form-input-pro {
         display: block;
         width: 100%;
     }
+    
     .form-bro {
         margin-bottom: 5px;
     }
+    
     .Product-details .silder-blog {
         width: 88%;
     }
+    
     .sub-Show {
         font-size: 13px;
         width: 100%;
         display: block;
         text-align: center;
     }
+    
     .sub1-Show {
         width: 100%;
         text-align: center;
     }
 }
-
 @media only screen and (max-width:400px) {
     .title-bolg h2 {
         font-size: 15px;
     }
+    
     .bottom-header p {
         font-size: 11px;
         margin: 5px;
         margin-right: 5px;
     }
+    
     .index-img2 img {
         height: 46px;
         max-width: 127px;
     }
+    
     .title-center img {
         max-width: 168px;
         max-height: 76px;
     }
+    
     .text-service-box h2 {
         color: #fa9400;
         font-size: 12px;
     }
+    
     .text-service-box p {
         overflow: hidden;
         font-size: 10px;
         height: 30px;
         margin: 0px;
     }
+    
     .header-index {
         min-height: 552px;
     }
+    
     .silder-blog {
         width: 66%;
         margin: 10px auto;
     }
+    
     .courses-div .silder-blog {
         width: 95%;
     }
+    
     .table-color1 i {
         font-size: 14px;
     }
+    
     .table-color td,
     .table-color th {
         font-size: 11px;
     }
+    
     .sub1-pro-top {
         display: block;
         width: 100%;
         text-align: center;
     }
+    
     .sub2-pro-top {
         display: inline-block;
         width: 100%;
         text-align: center;
     }
+    
     .message-pro {
         padding: 5px;
     }
+    
     .sub-details ul li {
         font-size: 13px;
     }
