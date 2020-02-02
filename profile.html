@@ -100,9 +100,9 @@
                                 <ul>
                                     <li><a href="profile.html" class="active">بياناتى</a></li>
                                     <li><a href="profile2.html">الدورات</a></li>
-                                    <li><a href="">الرسائل</a></li>
+                                    <li><a href="profile-message.html">الرسائل</a></li>
                                     <li><a href="">الاشعارات</a></li>
-                                    <li><a href="">استشارات</a></li>
+                                    <li><a href="profille-consulting.html">استشارات</a></li>
                                     <li><a href="">تسجيل الخروج</a></li>
                                 </ul>
                             </div>
@@ -139,9 +139,13 @@
                                     <label>البلد</label>
                                 </div>
                                 <div class="form-input-pro">
-                                    <input type="text" placeholder="" class="form-control" required>
-                                    <div class="invalid-feedback">
-                                        من فضلك ادخل البلد
+                                    <select class="custom-select" id="inputGroupSelect01" required>
+                                        <option selected disabled>البلد</option>
+                                        <option value="1">السعودية</option>
+                                        <option value="2">مصر </option>
+                                      </select>
+                                      <div class="invalid-feedback">
+                                        من فضلك ادخل البلد 
                                     </div>
                                 </div>
                             </div>
@@ -156,15 +160,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-bro">
+                            <div class="form-bro-1">
                                 <div class="form-label-pro">
                                     <label>الجنس</label>
                                 </div>
-                                <div class="form-input-pro">
-                                    <input type="text" placeholder="" class="form-control" required>
-                                    <div class="invalid-feedback">
-                                        من فضلك ادخل الجنس
-                                    </div>
+                                <div class="login-radio">
+                                    <input type="radio" id="id-radio6" name="radio1">
+                                    <label for="id-radio6">ذكر</label>
+                                </div>
+                                <div class="login-radio">
+                                    <input type="radio" id="id-radio7" name="radio1">
+                                    <label for="id-radio7">انثي</label>
                                 </div>
                             </div>
                             <button type="submit" class="cus-btn">تحديث</button>

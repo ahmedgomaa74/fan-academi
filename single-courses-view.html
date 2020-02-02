@@ -115,14 +115,12 @@
                 <div class="col-lg-9">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home1" role="tab" aria-controls="pills-home" aria-selected="true">الفصول</a>
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home1" role="tab" aria-controls="pills-home" aria-selected="true">نبذة عن الدورة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile" aria-selected="false">المزيد</a>
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile" aria-selected="false">الفيديوهات</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact3" role="tab" aria-controls="pills-contact" aria-selected="false">الملحقات</a>
-                        </li>
+
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -133,27 +131,26 @@
                             <div class="sub-courses-view">
                                 <h2>الفصل 1 - مقدمة الالوان</h2>
                                 <ul>
-                                    <li><i class="fab fa-youtube"></i> <span>1</span>الخامات و الادوات <p>30 دقيقه</p></li>
-                                    <li><i class="fab fa-youtube"></i> <span>2</span> الكانفس  <p>30 دقيقه</p></li>
-                                    <li><i class="fab fa-youtube"></i> <span>3</span>الفرش و انوعها  <p>30 دقيقه</p></li>
+                                    <li><a href="single-courses.html"><i class="fab fa-youtube"></i> <span>1</span>الخامات و الادوات <p>30 دقيقه</p></li>
+                                    <li><a href="single-courses.html"><i class="fab fa-youtube"></i> <span>2</span> الكانفس  <p>30 دقيقه</p> </a></li>
+                                    <li> <a href="single-courses.html"><i class="fab fa-youtube"></i> <span>3</span>الفرش و انوعها  <p>30 دقيقه</p></a></li>
 
                                 </ul>
                             </div>
                             <div class="sub-courses-view">
                                 <h2>الفصل 2 - مقدمة الالوان</h2>
                                 <ul>
-                                    <li><i class="fab fa-youtube"></i> <span>1</span>الخامات و الادوات <p>30 دقيقه</p></li>
-                                    <li><i class="fab fa-youtube"></i> <span>2</span> الكانفس  <p>30 دقيقه</p></li>
-                                    <li><i class="fab fa-youtube"></i> <span>3</span>الفرش و انوعها  <p>30 دقيقه</p></li>
-
+                                    <li><a href="single-courses.html"><i class="fab fa-youtube"></i> <span>1</span>الخامات و الادوات <p>30 دقيقه</p></li>
+                                    <li><a href="single-courses.html"><i class="fab fa-youtube"></i> <span>2</span> الكانفس  <p>30 دقيقه</p> </a></li>
+                                    <li> <a href="single-courses.html"><i class="fab fa-youtube"></i> <span>3</span>الفرش و انوعها  <p>30 دقيقه</p></a></li>
                                 </ul>
-                            </div> <div class="sub-courses-view">
+                            </div>
+                            <div class="sub-courses-view">
                                 <h2>الفصل 3 - مقدمة الالوان</h2>
                                 <ul>
-                                    <li><i class="fab fa-youtube"></i> <span>1</span>الخامات و الادوات <p>30 دقيقه</p></li>
-                                    <li><i class="fab fa-youtube"></i> <span>2</span> الكانفس  <p>30 دقيقه</p></li>
-                                    <li><i class="fab fa-youtube"></i> <span>3</span>الفرش و انوعها  <p>30 دقيقه</p></li>
-
+                                    <li><a href="single-courses.html"><i class="fab fa-youtube"></i> <span>1</span>الخامات و الادوات <p>30 دقيقه</p></li>
+                                    <li><a href="single-courses.html"><i class="fab fa-youtube"></i> <span>2</span> الكانفس  <p>30 دقيقه</p> </a></li>
+                                    <li> <a href="single-courses.html"><i class="fab fa-youtube"></i> <span>3</span>الفرش و انوعها  <p>30 دقيقه</p></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -180,23 +177,32 @@
                 </div>
             </div>
             <!-- start-footer-form -->
-            <form>
+            <form class="needs-validation" novalidate>
                 <div class="container">
-                    <div class="footer-form wow fadeInUp">
+                    <div class="footer-form">
                         <div class="row">
-                            <div class="col-lg-12 ">
+                            <div class="col-lg-12  wow fadeInUp">
                                 <h2>اشترك فى القائمة البريدية ليصلك جديد الدروس</h2>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6  col-6">
-                                <input type="text" placeholder="الاسم">
+                            <div class="col-lg-3 col-md-6 col-sm-6  col-6  wow fadeInUp">
+                                <input type="text" class="form-control" placeholder="الاسم" required>
+                                <div class="invalid-feedback">
+                                    من فضلك ادخل الاسم
+                                </div>
                             </div>
-                            <div class="col-lg-3  col-md-6 col-sm-6 col-6">
-                                <input type="tel" placeholder="الهاتف">
+                            <div class="col-lg-3  col-md-6 col-sm-6 col-6  wow fadeInUp">
+                                <input type="tel" class="form-control" placeholder="الهاتف" required>
+                                <div class="invalid-feedback">
+                                    من فضلك ادخل الاسم
+                                </div>
                             </div>
-                            <div class="col-lg-3  col-md-6 col-sm-6 col-6">
-                                <input type="email" placeholder="الايميل">
+                            <div class="col-lg-3  col-md-6 col-sm-6 col-6  wow fadeInUp">
+                                <input type="email" class="form-control" placeholder="الايميل" required>
+                                <div class="invalid-feedback">
+                                    من فضلك ادخل الاسم
+                                </div>
                             </div>
-                            <div class="col-lg-3  col-md-6 col-sm-6 col-6">
+                            <div class="col-lg-3  col-md-6 col-sm-6 col-6  wow fadeInUp">
                                 <button type="submit" class="cus-btn">اشترك</button>
                             </div>
                         </div>
@@ -213,11 +219,11 @@
                                 <h2>الخدمات</h2>
                                 <div class="ul-end-footer wow fadeInUp">
                                     <ul>
-                                        <li><a href="">الرئيسية</a></li>
-                                        <li><a href="">نبذة عنا</a></li>
-                                        <li><a href="">دروسي</a></li>
+                                        <li><a href="index.html">الرئيسية</a></li>
+                                        <li><a href="about.html">نبذة عنا</a></li>
+                                        <li><a href="courses.html">دروسي</a></li>
                                         <li><a href="">المتجر </a></li>
-                                        <li><a href="">تواصل معنا</a></li>
+                                        <li><a href="contactus.html">تواصل معنا</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -225,8 +231,8 @@
                         <div class="col-lg-3  col-md-3 col-sm-6 col-6">
                             <div class="sup1-end-footer wow fadeInUp">
                                 <ul>
-                                    <li><a href="">حسابى</a></li>
-                                    <li><a href="">السلة</a></li>
+                                    <li><a href="profile.html">حسابى</a></li>
+                                    <li><a href="courses.html">السلة</a></li>
                                     <li><a href="">الاشعارات</a></li>
                                 </ul>
                             </div>
@@ -253,7 +259,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -274,16 +279,16 @@
             </div>
         </div>
     </footer>
-</body>
 
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/custom.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 <!-- end-body
 =================== -->

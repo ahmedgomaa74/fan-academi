@@ -56,9 +56,9 @@
                                 <ul>
                                     <li><a href="index.html">الرئيسية</a></li>
                                     <li><a href="about.html">نبذة عنا </a></li>
-                                    <li><a href="#">دروسي</a></li>
-                                    <li><a href="#">المتجر</a></li>
-                                    <li><a href="#"> تواصل معنا </a></li>
+                                    <li><a href="courses.html">دروسي</a></li>
+                                    <li><a href="store.html">المتجر</a></li>
+                                    <li><a href="contactus.html"> تواصل معنا </a></li>
                                 </ul>
                             </div>
 
@@ -77,7 +77,7 @@
                 </div>
                 <!-- title-about -->
                 <div class="title-about">
-                    <h2><a href="index.html">الرئيسية</a> /<a href="courses.html">الدورات</a></h2>
+                    <h2><a href="index.html">الرئيسية</a> /<a href="profile-message.html">الرسائل</a></h2>
                     <h1>حسابي</h1>
                 </div>
             </div>
@@ -100,8 +100,8 @@
                                 <ul>
                                     <li><a href="profile.html">بياناتى</a></li>
                                     <li><a href="profile2.html">الدورات</a></li>
-                                    <li><a href="profile-message.html"  class="active">الرسائل</a> <span>1</span></li>
-                                    <li><a href="">الاشعارات</a></li>
+                                    <li><a href="profile-message.html" class="active">الرسائل</a> <span>1</span></li>
+                                    <li><a href="profille-view-message.html">الاشعارات</a></li>
                                     <li><a href="profille-consulting.html">استشارات</a></li>
                                     <li><a href="">تسجيل الخروج</a></li>
                                 </ul>
@@ -117,45 +117,45 @@
                             </div>
                             <div class="sub2-pro-top">
                                 <p>فرز حسب</p>
-                                <h3 id="drob-down-click">الحديث</h3>
-                                <div class="drob-down-message">
-                                    <ul>
-                                        <li>-------</li>
-                                        <li>-------</li>
-                                    </ul>
+                                <div class="ctm-select">
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>الحديث</option>
+                                    <option value="1">منذ يوم</option>
+                                    <option value="2">الاقل</option>
+                                  </select>
                                 </div>
                             </div>
                         </div>
                         <table class="table">
                             <thead>
-                              <tr>
-                                <th scope="col" class="table-1">الرسالة</th>
-                                <th scope="col" class="table-2">الوقت</th>
-                                <th scope="col" class="table-3">تاريخ</th>
-                                <th scope="col" class="table-4"> حذف</th>
-                              </tr>
+                                <tr>
+                                    <th scope="col" class="table-1">الرسالة</th>
+                                    <th scope="col" class="table-2">الوقت</th>
+                                    <th scope="col" class="table-3">تاريخ</th>
+                                    <th scope="col" class="table-4"> حذف</th>
+                                </tr>
                             </thead>
-                            <tbody >
-                              <tr class="table-color">
-                                <th scope="row">اريد تعلم الرسم </th>
-                                <td>منذ 3د</td>
-                                <td>15/2/2019</td>
-                                <td  class="table-color1"><i class="fas fa-times"></i></td>
-                              </tr>
-                              <tr  class="table-color">
-                                <th scope="row">ارسلك لك عملى</th>
-                                <td>منذ ساعه</td>
-                                <td>15/2/2019</td>
-                                <td  class="table-color1"><i class="fas fa-times"></i></td>
-                              </tr>
-                              <tr class="table-color">
-                                <th scope="row">هل هذا العمل جيد ام ماذا وماذا ينقصنى</th>
-                                <td>منذ يوم</td>
-                                <td>15/2/2019</td>
-                                <td  class="table-color1"><i class="fas fa-times"></i></td>
-                              </tr>
+                            <tbody>
+                                <tr class="table-color">
+                                    <th scope="row">اريد تعلم الرسم </th>
+                                    <td>منذ 3د</td>
+                                    <td>15/2/2019</td>
+                                    <td class="table-color1"><i class="fas fa-times"></i></td>
+                                </tr>
+                                <tr class="table-color">
+                                    <th scope="row">ارسلك لك عملى</th>
+                                    <td>منذ ساعه</td>
+                                    <td>15/2/2019</td>
+                                    <td class="table-color1"><i class="fas fa-times"></i></td>
+                                </tr>
+                                <tr class="table-color">
+                                    <th scope="row">هل هذا العمل جيد ام ماذا وماذا ينقصنى</th>
+                                    <td>منذ يوم</td>
+                                    <td>15/2/2019</td>
+                                    <td class="table-color1"><i class="fas fa-times"></i></td>
+                                </tr>
                             </tbody>
-                          </table>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -176,23 +176,32 @@
                 </div>
             </div>
             <!-- start-footer-form -->
-            <form>
+            <form class="needs-validation" novalidate>
                 <div class="container">
-                    <div class="footer-form wow fadeInUp">
+                    <div class="footer-form">
                         <div class="row">
-                            <div class="col-lg-12 ">
+                            <div class="col-lg-12  wow fadeInUp">
                                 <h2>اشترك فى القائمة البريدية ليصلك جديد الدروس</h2>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6  col-6">
-                                <input type="text" placeholder="الاسم">
+                            <div class="col-lg-3 col-md-6 col-sm-6  col-6  wow fadeInUp">
+                                <input type="text" class="form-control" placeholder="الاسم" required>
+                                <div class="invalid-feedback">
+                                    من فضلك ادخل الاسم
+                                </div>
                             </div>
-                            <div class="col-lg-3  col-md-6 col-sm-6 col-6">
-                                <input type="tel" placeholder="الهاتف">
+                            <div class="col-lg-3  col-md-6 col-sm-6 col-6  wow fadeInUp">
+                                <input type="tel" class="form-control" placeholder="الهاتف" required>
+                                <div class="invalid-feedback">
+                                    من فضلك ادخل الاسم
+                                </div>
                             </div>
-                            <div class="col-lg-3  col-md-6 col-sm-6 col-6">
-                                <input type="email" placeholder="الايميل">
+                            <div class="col-lg-3  col-md-6 col-sm-6 col-6  wow fadeInUp">
+                                <input type="email" class="form-control" placeholder="الايميل" required>
+                                <div class="invalid-feedback">
+                                    من فضلك ادخل الاسم
+                                </div>
                             </div>
-                            <div class="col-lg-3  col-md-6 col-sm-6 col-6">
+                            <div class="col-lg-3  col-md-6 col-sm-6 col-6  wow fadeInUp">
                                 <button type="submit" class="cus-btn">اشترك</button>
                             </div>
                         </div>
@@ -211,9 +220,9 @@
                                     <ul>
                                         <li><a href="index.html">الرئيسية</a></li>
                                         <li><a href="about.html">نبذة عنا</a></li>
-                                        <li><a href="">دروسي</a></li>
-                                        <li><a href="">المتجر </a></li>
-                                        <li><a href="">تواصل معنا</a></li>
+                                        <li><a href="courses.html">دروسي</a></li>
+                                        <li><a href="store.html">المتجر </a></li>
+                                        <li><a href="contactus.html">تواصل معنا</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -221,8 +230,8 @@
                         <div class="col-lg-3  col-md-3 col-sm-6 col-6">
                             <div class="sup1-end-footer wow fadeInUp">
                                 <ul>
-                                    <li><a href="">حسابى</a></li>
-                                    <li><a href="">السلة</a></li>
+                                    <li><a href="profile.html">حسابى</a></li>
+                                    <li><a href="courses.html">السلة</a></li>
                                     <li><a href="">الاشعارات</a></li>
                                 </ul>
                             </div>
@@ -249,7 +258,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -282,6 +290,6 @@
     <script src="js/custom.js"></script>
 </body>
 <!-- end-body
-=================== -->
+    =================== -->
 
 </html>
