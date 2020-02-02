@@ -19,6 +19,28 @@ $('.maincarousel').owlCarousel({
     }
 })
 
+
+
+//drob-dawn-header
+
+
+var $winl = $(window); // or $box parent container
+var $boxl = $("login-index, .click-index");
+$winl.on("click.Bst", function (event) {
+    if (
+        $boxl.has(event.target).length === 0 && //checks if descendants of $box was clicked
+        !$boxl.is(event.target) //checks if the $box itself was clicked
+    ) {
+
+    }
+});
+
+$(".click-index").click(function(){
+    $(".login-index").fadeToggle();
+});
+
+//-----
+//-----
 $('#owl-demo1').owlCarousel({
     loop:true,
     margin:10,
@@ -118,3 +140,21 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     modal.find('.modal-title').text('New message to ' + recipient)
     modal.find('.modal-body input').val(recipient)
   })
+
+// remove message
+$('.table-color1').removeClass
+
+
+
+
+$('#upload1').change(function() {
+    var i = $(this).prev('label').clone();
+    var file = $('#upload1')[0].files[0].name;
+    $(this).prev('label').text(file);
+});
+
+
+$("#upload1").change(function (e) {
+    var fileName = e.target.files[0].name;
+    $('#file-input').val(fileName);   
+});
