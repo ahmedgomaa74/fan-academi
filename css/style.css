@@ -163,28 +163,51 @@ body {
     margin: 40px 0px 0px;
 }
 
-.medi ul li {
-    margin: 0px 0px 0px 10px;
-    font-size: 22px;
-    position: relative;
-    cursor: pointer;    
+.medi-1 {
+    margin: 40px 0px 0px;
 }
 
-.drop-header-1 {
-    position: absolute;
-    width: 170px;
+.medi ul li {
+    margin: 0px 10px 0px 0px;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+}
+
+.medi-1 ul li {
+    margin: 0px 10px 0px 0px;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+}
+
+.login-index {
     background: #fff;
-    box-shadow: 0px 0px 4px #888;
-    padding: 15px;
-    border-radius: 5px;
-    right: -149px;
-    bottom: -139px;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 14px;
+    height: 80px;
+    box-shadow: 0px 0px 4px #fff;
+    padding: 0px 5px 10px;
+    position: absolute;
+    bottom: -57px;
+    left: 4px;
     display: none;
 }
 
+.login-index ul li {
+    text-align: right;
+    font-size: 16px;
+    margin: 10px 0px;
+}
 
+.login-index ul li a {
+    color: #000;
+}
 
-.drop-header-1::before {
+.login-index::before {
     content: "";
     position: absolute;
     width: 0px;
@@ -192,31 +215,8 @@ body {
     border-left: 5px solid transparent;
     border-right: 19px solid transparent;
     border-bottom: 20px solid #fff;
-    top: -8px;
-    left: 6px;
-}
-
-.drop-header-img {
-    display: inline-block;
-    width: 34%;
-    vertical-align: top;
-}
-
-.drop-header-2::before{
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-left: 5px solid transparent;
-    border-right: 19px solid transparent;
-    border-bottom: 20px solid #fff;
-    top: -8px;
-    left: 6px;
-}
-.drop-header-img img {
-    max-width: 40px;
-    max-height: 40px;
-    border-radius: 50%;
+    top: -11px;
+    left: 25px;
 }
 
 .medi ul li img {
@@ -232,35 +232,15 @@ body {
     padding: 0px 0px 50px;
 }
 
+.registration h2 {
+    text-align: center;
+    margin-bottom: 20;
+}
+
 .title-center img {
     max-width: 259px;
     max-height: 113px;
     cursor: pointer;
-
-}
-
-.drop-header-text {
-    display: inline-block;
-    width: 60%;
-    cursor: pointer;
-
-}
-.drop-header-text1{
-  display: block;
-}
-
-.drop-header-text1 ul li  {
-    font-size: 13px;
-    color: #000;
-    border-bottom:#ccc 2px solid;
-    width: 100%;
-    cursor: pointer;
-}
-
-
-.drop-header-text ul li {
-    font-size: 13px;
-    color: #000;
 }
 
 .index-text {
@@ -496,19 +476,22 @@ body {
     margin: 10px 0px;
 }
 
-.button-silder button {
+.button-silder a {
     width: 100%;
     height: 40px;
     background: #00aa9d;
     border: none;
     border-radius: 0px 0px 10px 10px;
     color: #fff;
+    display: block;
     position: relative;
     overflow: hidden;
     z-index: 2;
+    text-align: center;
+    padding: 8px 0px;
 }
 
-.button-silder button::before {
+.button-silder a::before {
     content: "";
     position: absolute;
     background: #fa9400;
@@ -522,7 +505,7 @@ body {
     z-index: -1;
 }
 
-.button-silder button:hover:before {
+.button-silder a:hover:before {
     transform: translateX(0);
     transition: all .5s ease-in-out;
     opacity: 1;
@@ -623,6 +606,7 @@ body {
 .sup-sections ul li span {
     background: #ff0000;
     width: 20px;
+    color: #fff;
     height: 20px;
     border-radius: 50%;
     text-align: center;
@@ -839,6 +823,10 @@ body {
     font-size: 20px;
 }
 
+.footer-form button {
+    margin-top: 17px;
+}
+
 .button1 {
     background: #00aa9d;
     margin-top: 10px;
@@ -883,8 +871,20 @@ body {
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 0px 0px 10px 0px;
-    margin: 20px 0px;
+    margin: 20px 0px 0px;
     color: #000;
+}
+
+.footer-form input:hover {
+    box-shadow: 0px 0px 0px #fff;
+}
+
+.footer-form .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
 }
 
 .footer-form .button1 {
@@ -1046,8 +1046,8 @@ body {
 
 .img-footer img {
     margin: 10px 0px;
-    height: 65px;
-    width: 200px;
+    height: 60px;
+    width: 190px;
 }
 
 .logo-jaadara {
@@ -1063,6 +1063,11 @@ body {
 .logo-jaadara p {
     text-align: left;
     margin: 0px;
+}
+
+.logo-jaadara img {
+    max-width: 60px;
+    max-height: 30px;
 }
 
 .logo-jaadara a {
@@ -1386,9 +1391,14 @@ body {
     margin-right: 10px;
 }
 
-.sub-from-buy label,
-.sub1-from-buy label {
+.sub-from-buy label {
     width: 20%;
+    vertical-align: top;
+}
+
+.sub-form-input {
+    display: inline-block;
+    width: 79%;
 }
 
 .sub1-from-buy label {
@@ -1396,9 +1406,8 @@ body {
     margin-right: 10px;
 }
 
-.sub-from-buy input,
-.sub1-from-buy input {
-    width: 78%;
+.sub-from-buy .form-control {
+    width: 99%;
     height: 39px;
     border: 1px solid #dcdcdc;
     background: #f6f6f6;
@@ -1412,8 +1421,7 @@ body {
     width: 38.3%;
 }
 
-.sub-from-buy input:hover,
-.sub1-from-buy input:hover {
+.sub-from-buy input:hover {
     background: #dcdcdc;
     border: 1px solid #f6f6f6;
     transition: all .5s ease-in-out;
@@ -1582,6 +1590,14 @@ ul#pills-tab {
     color: #000;
 }
 
+.form-bro-1 .login-radio {
+    width: 40%;
+}
+
+.form-input-pro select {
+    height: 45px;
+}
+
 .profille .cus-btn {
     margin: 20px 0px;
     width: 160px;
@@ -1636,7 +1652,7 @@ ul#pills-tab {
 }
 
 .sub2-pro-top p,
-.sub2-pro-top h3 {
+.sub2-pro-top .ctm-select {
     display: inline-block;
 }
 
@@ -1645,12 +1661,12 @@ ul#pills-tab {
     vertical-align: middle;
 }
 
-.sub2-pro-top h3 {
+.sub2-pro-top .ctm-select select {
     background: #dedede;
     text-align: center;
     width: 100px;
-    padding: 10px;
     vertical-align: bottom;
+    display: inline-block;
     height: 40px;
     cursor: pointer;
     position: relative;
@@ -2013,6 +2029,12 @@ ul#pills-tab {
     margin: 5px 0;
 }
 
+.bottom-certificate input {
+    width: 0px;
+    z-index: -1;
+    position: absolute;
+}
+
 .sub-certificate p {
     color: #f70000;
     margin: 30px 0px 0px;
@@ -2041,6 +2063,10 @@ ul#pills-tab {
     position: relative;
     padding: 0px 45px 10px 0px;
     border-bottom: 1px solid #dcdcdc;
+}
+
+.sub-courses-view ul li a {
+    color: #000;
 }
 
 .sub-courses-view ul li i {
@@ -2076,13 +2102,38 @@ ul#pills-tab {
 .chat {
     background: #fff;
     padding: 20px;
+    height: 400px;
+    overflow: auto;
 }
 
-.sub-chat img,
-.sub-chat2 img {
+.chat::-webkit-scrollbar {
+    width: 7px;
+}
+
+.chat::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.sub-chat-img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.chat::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+.img-chat {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 50%;
+    height: 200px;
+}
+
+.img-chat img {
+    width: 60%;
+    max-height: 100%;
 }
 
 .sub-chat p,
@@ -2098,9 +2149,29 @@ ul#pills-tab {
 .sub-chat2 {
     text-align: left;
     direction: ltr;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
+.sub-chat {
+    margin: 10px 0px;
+}
+
+.file-chat {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.input-chat label {
+    position: absolute;
+    top: 7px;
+    left: 113px;
+    color: #00aa9d;
+}
+.input-chat label i{
+    cursor: pointer;
+}
 .input-chat {
     margin-top: 20px;
     position: relative;
@@ -2108,6 +2179,7 @@ ul#pills-tab {
 
 .input-chat .form-control {
     overflow: hidden;
+    padding: 6px 12px 6px 135px;
 }
 
 .input-chat .cus-btn {
@@ -2116,4 +2188,224 @@ ul#pills-tab {
     height: 36px;
     left: 0px;
     top: -19px;
+}
+
+.login {
+    padding: 20px 20px;
+    background: #00aa9d;
+    width: 50%;
+    margin: auto;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px #ccc;
+}
+
+.login-bg {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.login-label {
+    margin: 10px 0px 0px;
+    color: #fff;
+}
+
+.login-input .form-control {
+    border-radius: 30px;
+}
+
+.login-check {
+    margin-top: 10px;
+    display: inline-block;
+    width: 49%;
+}
+
+.login-check1 {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+.login-check1 a {
+    color: #fff;
+    font-size: 13px;
+}
+
+.button-login .cus-btn {
+    margin: 10px auto;
+    width: 130px;
+    background: #fff;
+    color: #00aa9d;
+}
+
+.button-login .cus-btn:hover {
+    color: #fff;
+}
+
+.button-login1 {
+    margin: 10px 0px 0px;
+}
+
+.login-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px 0px;
+}
+
+.login h2 {
+    text-align: center;
+    margin: 10px 0px 20px;
+    color: #fff;
+}
+
+.login-text1 {
+    margin-top: -0;
+}
+
+.login .sub-contact {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.registration {
+    margin: 50px auto;
+    width: 50%;
+    background: #f6f6f6;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.login-input select {
+    border-radius: 30px;
+}
+
+.login-radio {
+    width: 49%;
+    display: inline-block;
+}
+
+.login-radio label {
+    cursor: pointer;
+}
+
+.button-radio button {
+    margin: 20px auto;
+}
+
+.interests {
+    margin: 50px auto;
+    width: 50%;
+    background: #f6f6f6;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+.interests h2 {
+    text-align: center;
+    margin: 10px 0px 20px;
+}
+
+.interests input {
+    width: 0px;
+    position: absolute;
+}
+
+.interests-input {
+    margin: 20px 0px;
+}
+
+.interests-input label {
+    position: relative;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.interests-input label::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px #ccc solid;
+    right: -20px;
+    top: 4px;
+    border-radius: 2px;
+}
+
+.interests-input input:checked~label::before {
+    content: "\f00c";
+    color: #000;
+    font-family: "font Awesome 5 free";
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    left: -20px;
+}
+
+.interests-input input:checked~label {
+    color: #00aa9d;
+}
+
+.button-intertests a {
+    background: #ccc;
+    margin: 10px 0px;
+}
+
+.button-intertests {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button-intertests1 {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: -webkit-left;
+}
+
+.button-intertests1 button {
+    margin: 10px 0px;
+}
+
+.attachment {
+    margin: 40px 0px;
+}
+
+.attachment h2 {
+    color: #00aa9d;
+    margin: 15px 0px;
+    font-size: 29px;
+}
+
+.attachment ul li {
+    list-style-type: none;
+    margin: 20px 0px;
+}
+
+.attachment ul li img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.attachment ul li a {
+    margin-right: 10px;
+    color: #000;
+    font-size: 20px;
+}
+
+.img-attachment {
+    margin: 20px 0px;
+}
+
+.img-attachment img {
+    width: 256px;
+    max-height: 208px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none !important;
 }
