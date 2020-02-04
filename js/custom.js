@@ -39,6 +39,10 @@ $(".click-index").click(function(){
     $(".login-index").fadeToggle();
 });
 
+$(".medi ul li img").click(function(){
+    $(".login-index").fadeToggle();
+});
+
 //-----
 //-----
 $('#owl-demo1').owlCarousel({
